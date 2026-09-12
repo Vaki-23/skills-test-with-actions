@@ -18,7 +18,7 @@ jobs:
     - name: Run tests and generate coverage
       run: pytest --cov=src
 
-    - name: Coverage comment
+    - - name: Coverage comment
       uses: py-cov-action/python-coverage-comment-action@v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
